@@ -1,7 +1,7 @@
 moments
 =======
 
-Python code and data used to investigate duration in narrative, supporting Ted Underwood, "Why Is Literary Time Measured in Moments?" Data for this project was also gathered by Sabrina Lee and Jessica Mercado.
+Code and data used to investigate duration in narrative, supporting Ted Underwood, "Why Is Literary Time Measured in Minutes?" Data for this project was also gathered by Sabrina Lee and Jessica Mercado.
 
 tagnovels3.py
 -------------
