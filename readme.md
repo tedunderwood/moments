@@ -26,6 +26,3 @@ averagetimes.csv
 ----------------
 Figures for whole volumes; different columns (meantime and weightedavg) contain different ways of weighting the sixteen individual passages that compose a volume. The column "col" (color) represents the reader who annotated the book and/or, in the case of biography, genre. No, it is not recommended to use a column two ways at once like this. :) 
 
-results/
---------
-Contains the jsons actually used for article.
