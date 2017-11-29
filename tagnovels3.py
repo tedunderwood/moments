@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 
-# Create training sets. This short function does nothing
-# but combine confidentvolumes (created by inferfromreaders)
-# and taggedvolumes (created by manualtagging).
+# Note that this script is not designed to be portable.
+# We don't expect people to replicate the whole data-
+# *generation* process. Someone willing to put that much
+# work in would be better advised to write their own
+# paper.
+
+# For that reason, file paths are absolute rather than relative.
+# This code *documents* what we did, but it's not code that we
+# are trying to make executable for other researchers.
 
 import csv, os, sys, random, json
 from collections import Counter
