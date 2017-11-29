@@ -1,11 +1,5 @@
 import json, csv, math, os, sys
 import numpy as np
-
-# import utils
-currentdir = os.path.dirname(__file__)
-libpath = os.path.join(currentdir, '../lib')
-sys.path.append(libpath)
-
 import estimatedialog
 
 def zscores(alist):
@@ -124,7 +118,7 @@ def minejson(jsonobj, hardseeds, outrows, seglevel, color):
 outrows = []
 
 hardseeds = set()
-with open('../causes/stanford.csv', encoding = 'utf-8') as f:
+with open('lib/stanford.csv', encoding = 'utf-8') as f:
     reader = csv.DictReader(f)
     for row in reader:
         if row['class'] == 'hard':
@@ -186,33 +180,6 @@ with open('segleveldata.csv', mode = 'w', encoding = 'utf-8') as f:
     writer.writerow(['title', 'date', 'time', 'timez', 'hardz', 'hardraw', 'dialog', 'col'])
     for row in seglevel:
         writer.writerow(row)
-
-# slices = dict()
-
-# for filename, filedict in jsonobj.items():
-#     date = int(filedict['metadata']['firstpub'])
-#     title = filedict['metadata']['title']
-#     times = []
-#     segments = filedict['segments']
-#     for idx, seg in enumerate(segments):
-#         time = seg['narratedtime']
-#         if time > 0 and wordcount > 0:
-#             time = math.log(time / wordcount)
-#             if idx not in slices:
-#                 slices[idx] = []
-#             slices[idx].append(time)
-
-# outrows = []
-# for idx, times in slices.items():
-#     meantime = sum(times) / len(times)
-#     outrows.append([idx, meantime])
-
-
-# with open('meanslicetimes.csv', mode = 'w', encoding = 'utf-8') as f:
-#     writer = csv.writer(f)
-#     writer.writerow(['slice', 'meantime'])
-#     for row in outrows:
-#         writer.writerow(row)
 
 
 
