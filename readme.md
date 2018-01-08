@@ -1,6 +1,8 @@
 Why Literary Time Is Measured in Minutes
 =========================================
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1137728.svg)](https://doi.org/10.5281/zenodo.1137728)
+
 Code and data used to investigate duration in narrative, supporting Ted Underwood, "Why Literary Time Is Measured in Minutes" (forthcoming in *ELH*, 2018). Data for this project was also gathered by Sabrina Lee and Jessica Mercado.
 
 I have aimed to make calculations fully reproducible by people who are comfortable with Python and R. Readers who don't program could still inspect intermediate stages of analysis using a spreadheet. (You would probably start with [averagetimes.csv.](https://github.com/tedunderwood/moments/blob/master/averagetimes.csv)) The scripts in this repository require Python 3; they were written in Python 3.5. Visualizations were produced using R version 3.3.3.
